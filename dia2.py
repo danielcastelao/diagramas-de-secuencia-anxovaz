@@ -30,4 +30,4 @@ class Visor:
 
 
 if __name__ == '__main__':
-    Main().callSuma(1, 2)
+    Main().callSuma(1, 2) #imprime 3

@@ -2,19 +2,18 @@ class Main:
     def __init__(self):
         pass
 
+    '''
+    la clase Main mediante el método mensaje() llama a mensaje2() de Second
 
-'''
-la clase Main mediante el método mensaje() llama a mensaje2() de Second
+    MAIN        SECOND
+      | mensaje()  |
+      |----------->[]---|
+      | mensaje2() []   |
+      |<-----------[]<--|
+      |            |
+      MAIN       SECOND
 
-MAIN        SECOND
-  | mensaje()  |
-  |----------->[]---|
-  | mensaje2() []   |
-  |<-----------[]<--|
-  |            |
-  MAIN       SECOND
-
-'''
+    '''
     def mensaje(self, mensaje):
         if isinstance(mensaje, str):
             return Second().mensaje2(mensaje)
